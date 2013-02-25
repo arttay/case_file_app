@@ -1,0 +1,79 @@
+<html>
+<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+	<script src="js/js.js"></script>
+	<link rel = "stylesheet" href ="css/css.css" />
+	
+	</head>
+<body>
+	<div id = "wrapper">
+		<div class = "ban">
+<img src = "img/logo_trans.gif" class = "banner" />
+</div>
+
+		<div id = "ledge">
+
+			
+			<fieldset>
+				<ul>
+					<li class = "item"><a href = "db/all_not.php">Output</a></li>
+					<li class = "item"><a href = "html/change.php">Update</a></li>
+					<li class = "item"><a href = "html/delete.php">Delete</a></li>
+					<li class = "item"><a href = "http://art-taylor.net">art-taylor.net</a></li>
+				</ul>	
+				
+
+<form action="php/backend.php" method="post" id = "commentForm">
+
+Client Name<br />
+<input type = "text" name = "name" class = "required" required /><br />
+Case Number<br />
+<input type = "text" name = "case" class = "required" required/><br />
+Account Number<br />
+<input type = "text" name = "account" class = "required" required/><br />
+Date Created(month/day/year)<br />
+<input type = "date" name = "date" class = "required" required/><br />
+Advisor<br />
+<input type = "text" name = "advisor" class = "required" required/><br />
+Email advisor<br />
+<input type = "checkbox" name = "email" class = "check"><br />
+
+<div id = "extra" class = "hide">
+	<fieldset>
+	Type your message below:<br />
+<textarea name = 'message'  id = "add" rows ="5"></textarea><br />
+Recipient's email<br />
+<input type = "text" name = "sendTo" id = "add" /><br /><br />
+Who is this Email from?<br />
+<input type = "radio" name = "person" value = "TPurinton">Tricia<br />
+<input type = "radio" name = "person" value = "Adrienne"/>Adrienne<br />
+<input type = "radio" name = "person" value = "April"/>April<br />
+</fieldset>
+</div><!--end id extra-->
+
+<br />
+
+
+Redhawk Done?<br />
+<input type = "radio" name = "rdone" value = "yes" />Yes
+<input type = "radio" name = "rdone" value = "no" />No<br />
+TD done?<br />
+<input type = "radio" name = "tdone" value = "yes" />Yes
+<input type = "radio" name = "tdone" value = "no" />No<br />
+Notes<br />
+<textarea name = 'note' class = "required" required></textarea>
+<br />
+
+
+
+<input type="submit" value = "Submit">
+</form>
+
+
+
+</fieldset>
+</div><!--end ledge-->
+</div><!--end wrapper-->
+</body>
+</html>
